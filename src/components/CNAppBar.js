@@ -81,13 +81,18 @@ export default function CNAppBar() {
         <Button color="primary" variant="contained" size="small">
           Go Back
         </Button>
-        <Typography variant="h5" align="center" style={{ marginLeft: "35%" }}>
+        <Typography variant="h5" align="center" style={{ marginLeft: "38%" }}>
           Clinical Note
         </Typography>
       </Box>
 
       <Box
-        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
         className={classes.field}
       >
         <Box

@@ -26,13 +26,13 @@ const ClinicalNotes = () => {
       <Grid item>
         <CNAppBar />
       </Grid>
-      <Grid item>
+      <Grid item style={{ width: "inherit", padding: "0vh 6.5vw" }}>
         <CNPatientInfo />
       </Grid>
-      <Grid item>
+      <Grid item style={{ width: "inherit", padding: "0vh 6.5vw" }}>
         <CNCheckboxes />{" "}
       </Grid>
-      <Grid item>
+      <Grid item style={{ width: "inherit", padding: "0vh 6.5vw" }}>
         <CNSmartPrescriptions />{" "}
       </Grid>
       {/* <Grid item>
