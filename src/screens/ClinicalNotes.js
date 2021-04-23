@@ -20,8 +20,9 @@ const ClinicalNotes = () => {
     <Grid
       container
       direction="column"
-      justify="space-around"
+      justify="space-evenly"
       alignItems="center"
+      style={{ minheight: "100%" }}
     >
       <Grid item>
         <CNAppBar />
@@ -32,15 +33,24 @@ const ClinicalNotes = () => {
       <Grid item style={{ width: "inherit", padding: "0vh 6.5vw" }}>
         <CNCheckboxes />{" "}
       </Grid>
-      <Grid item style={{ width: "inherit", padding: "0vh 6.5vw" }}>
+      <Grid
+        item
+        style={{ width: "inherit", padding: "0vh 6.5vw", marginBottom: "4vh" }}
+      >
         <CNSmartPrescriptions />{" "}
       </Grid>
       {/* <Grid item>
         <CNPayment />{" "}
-      </Grid>
-      <Grid item>
-        <CNPaymentRadio />
       </Grid> */}
+      <Grid
+        item
+        style={{
+          // width: "inherit", padding: "0vh 6.5vw",
+          marginBottom: "2vh",
+        }}
+      >
+        <CNPaymentRadio />
+      </Grid>
     </Grid>
   );
 };
